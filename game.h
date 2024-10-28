@@ -1,9 +1,9 @@
 #pragma once
 
+#include <iostream>
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
 #include <SFML/Window.hpp>
-
 /*
     Class that acts as Game Engine
     Wrapper Class
@@ -17,10 +17,14 @@ private:
     sf::RenderWindow *window; // without pointers, the object gets destroyed after functions completion.
     sf::VideoMode videoMode;
     sf::Event ev;
+
+    //Game objects
+    sf::RectangleShape enemy;
  
     // Private Functions.
     void initVariables();
     void initWindow();
+    void initEnemies();
 public:
     // Constructors & Destructors
     Game();

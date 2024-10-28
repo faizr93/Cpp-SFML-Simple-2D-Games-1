@@ -9,7 +9,7 @@ int main()
     Game game;
 
     // Game loop
-    while (game.isRunning())
+    while (game.running())
     {
         // Update
         game.update();
